@@ -83,11 +83,11 @@ Update main configuration file:
 nano .env-local
 ```
 
-Set `ENVIRONMENT` to ="production"=
-Update the ==TASKS== field with the task IDs you want to run, seperataed by commas, no space between!
-Update ==TASK_STAKES== field with the minimum or greater stake amounts corresponding to each task in ==TASKS==, seperated by commas. Full list of Tasks and their details (i.e. min stakes) found [here](# link to below).
-Set ==INITIAL_STAKING_WALLET_BALANCE== to the amount of KOII you want in the Staking wallet. This should be greater than the SUM of all ==TASK_STAKES== + 1 KOII for covering gas. 
-NB! Remember this must be less than 1 KOII of what you will have in your Main wallet (i.e. you set ==TASK_STAKES== = 2,2 and ==INITIAL_STAKING_WALLET_BALANCE== = 5 then you must have in your main wallet 6 KOII so there is enough for covering gas)
+Set `ENVIRONMENT` to `"production"`
+Update the `TASKS` field with the task IDs you want to run, seperataed by commas, no space between!
+Update `TASK_STAKES` field with the minimum or greater stake amounts corresponding to each task in `TASKS`, seperated by commas. Full list of Tasks and their details (i.e. min stakes) found [here](# link to below).
+Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staking wallet. This should be greater than the SUM of all `TASK_STAKES` + 1 KOII for covering gas. 
+NB! Remember this must be less than 1 KOII of what you will have in your Main wallet (i.e. you set `TASK_STAKES=2,2` and `INITIAL_STAKING_WALLET_BALANCE= 5` then you must have in your main wallet 6 KOII so there is enough for covering gas)
 
 ```
 Ctrl +S = Save
