@@ -99,12 +99,9 @@ Ctrl +X = Exit
 
 4.Install dependencies
 
-### Ensure Koii CLI is Installed. 
+1.Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
-
-
-### Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
+2.Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
 
 ```
 koii balance
@@ -128,7 +125,7 @@ koii address
 For getting started Koii Foundation have created a Koii Faucet in order to receive first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
 
 
-### Installing Docker
+3.Installing Docker
 
 ```
 sudo apt install docker
@@ -157,7 +154,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 
-5.Run the Docker Compose in order to launch your node
+## Run the Docker Compose in order to launch your node
 
 ```
 cd VPS-task !!! Need to double chcek once this is adjusted above!!!!!!
