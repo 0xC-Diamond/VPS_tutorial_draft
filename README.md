@@ -267,7 +267,7 @@ You should always have to keep your Staking_Public_Key balance filled.
 
 Task name	Task ID	Min stake
 
-*Free Token Task!*	~AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3~ -> NEW Task ID from 15.02.2024= 6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN 1.7 KOII
+*Free Token Task!*	~6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN~ -> NEW Task ID from 02.03.2024= 4mFgWD5GwGTrhc7vBXQnNLkFFrsMduSEa8aBTWwtfLdk 1.7 KOII
 
 *Arweave Verifier*	BwwkRHB1GVWvVDbdXfUobRFLfz7wz6tz2u2W8mKCUjsj 1.9 KOII
 
