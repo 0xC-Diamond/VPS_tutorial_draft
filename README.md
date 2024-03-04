@@ -246,6 +246,43 @@ stakepotaccountUSDX2sDSAcq8ZEvA3Tiv7tRpJ1Dv represents the Stake Pot Account
 YOUR-ADDRESS represents the Wallet that will receive the claimed Coins   
 /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet 
 
+## Additional way to claim rewards using Koii_claimer:
+Here you need to create json file that contains the task configurations you wanna claim its rewards
+First:
+
+```
+nano params.json
+```
+This will create a json file now you need to fill in some information for example:
+
+```
+{"taskStateInfoAddress": "6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN",
+
+"stakePotAccount": "FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d",
+
+"beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
+
+"claimerKeypairPath": "VPS-task/namespace/staking_wallet.json"}
+```
+Please change the beneficiaryAccount here to make it your wallet public address.
+
+Then all you need is to call :
+
+```
+npx koii_claimrewards@latest params.json
+```
+## If you run into problems with getting the interactive menu or even calling the Koii_claimer:
+
+Please make sure you have the latest Node + npm installed.
+
+To do so :
+
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g npm@latest
+```
+
 ## Additional helpful commands you should know
 ```
 koii -u https://testnet.koii.live balance
