@@ -200,7 +200,7 @@ sudo apt install npm
 
 execute the command 'create-task-cli' and you will see an interactive menu
 ```
-create-task-cli
+npx @_koii/create-task-cli@latest
 ```
 ```
 ? Select operation › - Use arrow-keys. Return to submit.
