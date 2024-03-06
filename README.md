@@ -142,9 +142,7 @@ docker-compose up
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 
 
-! If you encounter error, please verify Docker version!
-
-Check docker version
+! If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify Docker version!
 
 ```
 docker-compose --version
@@ -164,6 +162,13 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 Give the system ther permission
 ```
 sudo chmod +x /usr/local/bin/docker-compose
+```
+
+## Run the Docker Compose again in order to launch sucessfuly your node
+
+```
+cd VPS-task
+docker-compose up
 ```
 
 **After completing this step you have your node sucessfully running**
