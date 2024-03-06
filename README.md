@@ -197,9 +197,7 @@ It is success!
 ```
 sudo apt install npm
 ```
-
-
-execute the command 'create-task-cli' and you will see an interactive menu
+Execute the command 'create-task-cli' and you will see an interactive menu
 ```
 npx @_koii/create-task-cli@latest
 ```
