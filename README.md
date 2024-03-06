@@ -128,6 +128,8 @@ For getting started Koii Foundation have created a Koii Faucet in order to recei
 
 ```
 sudo apt install docker
+```
+```
 sudo apt install docker-compose
 ```
 Check docker version
