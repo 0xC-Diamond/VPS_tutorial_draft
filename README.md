@@ -208,10 +208,16 @@ It is success!
 
 ## How to interact now with the running Node?
 
-1. Install dependencies
+1. Install dependencies (NodeJS + NPM)
 ```
 sudo apt install npm
 ```
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g npm@latest
+```
+
 Execute the command 'create-task-cli' and you will see an interactive menu
 ```
 npx @_koii/create-task-cli@latest
@@ -263,8 +269,8 @@ HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the clai
 ## Additional way to claim rewards using Koii_claimer:
 
 Here you need to create json file that contains the task configurations you wanna claim its rewards
-First:
 
+First:
 ```
 nano params.json
 ```
@@ -281,20 +287,10 @@ This will create a json file now you need to fill in some information for exampl
 ```
 Please change the beneficiaryAccount here to make it your wallet public address.
 
-Then all you need is to call :
 
+Then all you need is to call :
 ```
 npx koii_claimrewards@latest params.json
-```
-
-## If you run into problems with getting the interactive menu or even calling the Koii_claimer:
-
-Please make sure you have the latest Node + npm installed.
-
-```
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo npm install -g npm@latest
 ```
 
 ## Additional helpful commands you should know
