@@ -66,7 +66,7 @@ When the updates are completed, you will be returned to your command line.
 
 In order to succesfully launch a Koii Node there are perequisites which has to be stored in your server for Koii Node to function. 
 ```
-git clone https://github.com/koii-network/VPS-task !To be adjusted the name so it is not confusing!
+git clone https://github.com/koii-network/VPS-task
 ```
 Then we enter that exact directory where the installation files can be found.
 ```
@@ -156,7 +156,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ## Run the Docker Compose in order to launch your node
 
 ```
-cd VPS-task !!! Need to double chcek once this is adjusted above!!!!!!
+cd VPS-task
 docker-compose up
 ```
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
