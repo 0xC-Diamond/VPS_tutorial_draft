@@ -292,6 +292,10 @@ koii address
 koii-keygen pubkey staking_wallet.json /or/ id.json
 ```
 
+If you encounter after server restart that your "koii" commands is not working, you should set PATH again in order to fully functioning KOII CLI!
+```
+export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check verify what is your correct path in certain server!
+```
 Feel free to reach out to us in Discord if you have any further questions or need assistance.
 
 
