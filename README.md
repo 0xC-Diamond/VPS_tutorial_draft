@@ -99,9 +99,9 @@ Ctrl +X = Exit
 
 #### 4.Install dependencies
 
-1.Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
+    1. Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-2.Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
+    2.Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
 
 ```
 koii balance
@@ -125,7 +125,7 @@ koii address
 For getting started Koii Foundation have created a Koii Faucet in order to receive first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
 
 
-3.Installing Docker
+    3.Installing Docker
 
 ```
 sudo apt install docker
@@ -189,11 +189,12 @@ task_node  | setup function called
 task_node  | Free Token Task! listening on port 10000
 task_node  | getTaskLevelDBPath
 ```
-Then CONGRATULATIONS - it is success!
+
+It is success!
 
 ## How to interact now with the running Node?
 
-1.Install dependencies
+1. Install dependencies
 ```
 sudo apt install npm
 ```
