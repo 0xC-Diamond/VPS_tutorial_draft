@@ -132,6 +132,18 @@ sudo apt install docker
 ```
 sudo apt install docker-compose
 ```
+
+## Run the Docker Compose in order to launch your node
+
+```
+cd VPS-task
+docker-compose up
+```
+This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
+
+
+! If you encounter error, please verify Docker version!
+
 Check docker version
 
 ```
@@ -153,15 +165,6 @@ Give the system ther permission
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-
-
-## Run the Docker Compose in order to launch your node
-
-```
-cd VPS-task
-docker-compose up
-```
-This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 
 **After completing this step you have your node sucessfully running**
 
