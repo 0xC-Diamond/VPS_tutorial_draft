@@ -51,7 +51,8 @@ root@servername:~$
 
 ## Setting Up the Environment on VPS
 
-1. Install OS Updates
+#### 1. Install OS Updates
+
 Before deploying Koii Node on your server you should install the most recent updates and security patches for your operating system. 
 To accomplish this, use your terminal to execute the following command:
 ```
@@ -61,7 +62,7 @@ The updates will now begin downloading and installing.
 This process may take some time, depending on your server hardware and download speed. 
 When the updates are completed, you will be returned to your command line.
 
-2. Retrieve all the necessary files for Koii node on VPS (Cloning Main Repository)
+#### 2. Retrieve all the necessary files for Koii node on VPS (Cloning Main Repository)
 
 In order to succesfully launch a Koii Node there are perequisites which has to be stored in your server for Koii Node to function. 
 ```
@@ -72,7 +73,7 @@ Then we enter that exact directory where the installation files can be found.
 cd VPS-task
 ```
 
-3.Configure the Environment Variables
+#### 3.Configure the Environment Variables
 
 Update main configuration file:
 
@@ -96,7 +97,7 @@ Ctrl +S = Save
 Ctrl +X = Exit
 ```
 
-### 4.Install dependencies
+#### 4.Install dependencies
 
 1.Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
