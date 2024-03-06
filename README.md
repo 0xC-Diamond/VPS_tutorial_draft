@@ -181,6 +181,11 @@ docker logs -f --tail 100 task_node
 
 If the logs return, something like i.e.
 ```
+task_node    | [ '4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is' ] [ '2' ]
+task_node    | Staking wallet already exists
+task_node    | { isStakingWalletExists: true }
+task_node    | Staked 2 on 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
+.....
 Cluster RPC URL: https://testnet.koii.live
 task_node  | *********************ENDPOINTS*********************
 task_node  | /attention*
