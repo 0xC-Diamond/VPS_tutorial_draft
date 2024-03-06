@@ -99,9 +99,9 @@ Ctrl +X = Exit
 
 #### 4.Install dependencies
 
-    1. Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
+1. Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-    2.Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
+2. Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
 
 ```
 koii balance
@@ -124,8 +124,7 @@ koii address
 
 For getting started Koii Foundation have created a Koii Faucet in order to receive first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
 
-
-    3.Installing Docker
+3. Installing Docker
 
 ```
 sudo apt install docker
