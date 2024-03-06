@@ -216,37 +216,39 @@ npx @_koii/create-task-cli@latest
 ### Example how to claim rewards from the "Free Token Task!"
 ```
 Calling ClaimReward
-✔ Enter the task id … 6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN
-✔ Enter the stakePotAccount address … FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d
-✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … 5aU9fdhjpe2sZKzZ858tV1ZDGjht1Q1UQewEphdo5meZ
+✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
+✔ Enter the stakePotAccount address … stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ
+✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … HERE_YOUR_WALLET_PUBLIC_ADDRESS
 ✔ Enter the path to Claimer wallet … /home/koii/koii-node/namespace/staking_wallet.json
 Success
 ```
-6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN represents the Task ID   
-FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d represents the Task Creator ID   
-5aU9fdhjpe2sZKzZ858tV1ZDGjht1Q1UQewEphdo5meZ represents the Wallet that will receive the claimed Coins   
+4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID   
+stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account   
+HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins   
 /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet   
 
 ### Example how to Unstake from the "Free Token Task!"
 ```
 1. Calling Withdraw staked funds from task
-✔ Enter the task id … 6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN
+✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the submitter wallet path address … /home/koii/koii-node/namespace/staking_wallet.json
+
 Gives error but don't worry, follow on with next step ->
 
 2.Calling ClaimReward
-✔ Enter the task id … 6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN
+✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the stakePotAccount address … stakepotaccountUSDX2sDSAcq8ZEvA3Tiv7tRpJ1Dv
-✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … YOUR-ADDRESS
+✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … HERE_YOUR_WALLET_PUBLIC_ADDRESS
 ✔ Enter the path to Claimer wallet … /home/koii/koii-node/namespace/staking_wallet.json
 Success
 ```
-6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN represents the Task ID   
-stakepotaccountUSDX2sDSAcq8ZEvA3Tiv7tRpJ1Dv represents the Stake Pot Account    
-YOUR-ADDRESS represents the Wallet that will receive the claimed Coins   
+4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID   
+stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account    
+HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins   
 /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet 
 
 ## Additional way to claim rewards using Koii_claimer:
+
 Here you need to create json file that contains the task configurations you wanna claim its rewards
 First:
 
@@ -256,9 +258,9 @@ nano params.json
 This will create a json file now you need to fill in some information for example:
 
 ```
-{"taskStateInfoAddress": "6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN",
+{"taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
 
-"stakePotAccount": "FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d",
+"stakePotAccount": "stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ",
 
 "beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
 
@@ -271,11 +273,10 @@ Then all you need is to call :
 ```
 npx koii_claimrewards@latest params.json
 ```
+
 ## If you run into problems with getting the interactive menu or even calling the Koii_claimer:
 
 Please make sure you have the latest Node + npm installed.
-
-To do so :
 
 ```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -288,36 +289,14 @@ sudo npm install -g npm@latest
 koii -u https://testnet.koii.live balance
 koii --version
 koii address
-koii-keygen pubkey staking_wallet.json
+koii-keygen pubkey staking_wallet.json /or/ id.json
 ```
 
 Feel free to reach out to us in Discord if you have any further questions or need assistance.
 
 
-If you encounter any error try to instal components seperately:
-Link where to find how to install Koii CLI on different OS: https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli
-
 Thing to note:
 You should always have to keep your Staking_Public_Key balance filled. 
 
 
-## Full list of Tasks:
-
-Task name	Task ID	Min stake
-
-*Free Token Task!*	~6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN~ -> NEW Task ID from 02.03.2024= 4mFgWD5GwGTrhc7vBXQnNLkFFrsMduSEa8aBTWwtfLdk 1.7 KOII
-
-*Arweave Verifier*	BwwkRHB1GVWvVDbdXfUobRFLfz7wz6tz2u2W8mKCUjsj 1.9 KOII
-
-*Inflation Monitoring*	EN4CA8EuLzUJGDC8p6WwCqCniwGB99sXh7Ma2WBKDL9o 0.9 KOII
-
-*Big Big Task*	tqhFcPKvcWPagNWNEBC6LtpFujboi7FigVoVUw2Ph8n 0.01 KOII
-
-*Adot Search AI*	5hoMYrrdPQneqsQyRGzmoHvKEbR5kA1dN6jdUWFnhgVH 1.9 KOII
-
-*#koii Twitter Archive*	9Vfa7Jowd3q7xdiV4hSZt1t5L9PWXjFWb6VuLbUXPwUS 1.9 KOII
-
-*Archive Twitter*	Hcpv6q57mcG9fGca9xMoivMuCVNWZd9atxRQfcde6Edb 1.9 KOII
-
-*Mask Social Feeds*	7NvPT3RC24NhgMZZSW1Ke5WKcVLwQgwRbYfVYsvkJobH 1.9 KOII
-
+### Full list of Tasks can be found here[https://docs.koii.network/faq/pagethree/#full-list-of-tasks-for-vps]
