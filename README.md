@@ -287,6 +287,7 @@ sudo npm install -g npm@latest
 koii -u https://testnet.koii.live balance
 koii --version
 koii address
+koii-keygen pubkey staking_wallet.json
 ```
 
 Feel free to reach out to us in Discord if you have any further questions or need assistance.
