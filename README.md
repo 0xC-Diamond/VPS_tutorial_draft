@@ -96,7 +96,7 @@ Ctrl +S = Save
 Ctrl +X = Exit
 ```
 
-4.Install dependencies
+### 4.Install dependencies
 
 1.Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
