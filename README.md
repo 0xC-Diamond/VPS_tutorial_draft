@@ -299,4 +299,4 @@ Thing to note:
 You should always have to keep your Staking_Public_Key balance filled. 
 
 
-### Full list of Tasks can be found here[https://docs.koii.network/faq/pagethree/#full-list-of-tasks-for-vps]
+### Full list of Tasks can be found [here](https://docs.koii.network/faq/pagethree/#full-list-of-tasks-for-vps)
